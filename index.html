@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taylon | Currículo e Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="header-container">
+      <a href="#inicio" class="logo">Taylon</a>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#inicio" class="link">Início</a></li>
+          <li><a href="#sobre" class="link">Sobre Mim</a></li>
+          <li><a href="#formacao" class="link">Formação</a></li>
+          <li><a href="#habilidades" class="link">Habilidades</a></li>
+          <li><a href="#apis" class="link">APIs</a></li>
+          <li><a href="#contato" class="link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <img src="imagens/WhatsApp Image 2026-06-30 at 22.38.05.jpeg" class="foto" />
+      <h1>Taylon</h1>
+      <p class="cargo">Estudante de Análise e Desenvolvimento de Sistemas</p>
+      <p class="bio">
+        Estudante de ADS na Faculdade UNIFASIPE, apaixonado por tecnologia.
+        Estou aprendendo a criar sites e aplicações web, unindo lógica de
+        programação com boas práticas de desenvolvimento.
+      </p>
+      <div class="botoes">
+        <a href="#contato" class="btn btn-azul">Entrar em Contato</a>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <h2 class="titulo">Sobre Mim</h2>
+
+      <p class="texto">
+        Tenho 18 anos, sou de Sinop - MT, e curso o primeiro semestre de
+        Análise e Desenvolvimento de Sistemas na UNIFASIPE. Também tenho
+        formação técnica pelo IFMT, o que me ajudou bastante no início da
+        faculdade.
+      </p>
+      <p class="texto">
+        Presto serviços digitais para pequenos negócios
+        de Lucas do Rio Verde, como criação de sites e gestão de redes sociais. Também
+        mantenho um blog sobre programação.
+      </p>
+      <p class="texto">
+        Meu objetivo é me tornar um desenvolvedor front-end, aprendendo cada
+        vez mais sobre JavaScript.
+      </p>
+    </section>
+
+    <section class="section fundo-azul" id="formacao">
+      <h2 class="titulo">Formação Acadêmica</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Análise e Desenvolvimento de Sistemas</h3>
+          <p>Faculdade UNIFASIPE - Sinop, MT</p>
+          <span class="tag">Cursando</span>
+        </div>
+
+        <div class="card">
+          <h3>Curso Técnico</h3>
+          <p>IFMT</p>
+          <span class="tag">Concluído</span>
+        </div>
+
+        <div class="card">
+          <h3>Front-End Web Development</h3>
+          <p>Fundação Bradesco</p>
+          <span class="tag">Certificado</span>
+        </div>
+
+        <div class="card">
+          <h3>LGPD</h3>
+          <p>Fundação Bradesco</p>
+          <span class="tag">Certificado</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section" id="habilidades">
+      <h2 class="titulo">Habilidades</h2>
+
+      <ul class="lista-habilidades">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Git e GitHub</li>
+      </ul>
+    </section>
+
+    <section class="section fundo-azul" id="redes">
+      <h2 class="titulo">Redes Sociais</h2>
+
+      <div class="redes">
+        <a href="https://github.com/Taylon10" target="_blank">
+          <img src="imagens/git.jpeg" alt="GitHub" class="logo-rede" />
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/taylon-mikael-02ba8730a?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">
+          <img src="imagens/linkdin.jpeg" alt="LinkedIn" class="logo-rede" />
+          LinkedIn
+        </a>
+        <a href="https://www.instagram.com/08taylon_?igsh=bnRkYW83ZWVndWdu&utm_source=qr" target="_blank">
+          <img src="imagens/insta.jpeg" alt="Instagram" class="logo-rede" />
+          Instagram
+        </a>
+        <a href="mailto:taylonmikael8@gmail.com">
+          <img src="imagens/emai.jpeg" alt="E-mail" class="logo-rede" />
+          E-mail
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="apis">
+      <h2 class="titulo">APIs BrasilAPI</h2>
+      <div class="api-card">
+        <h3>Consulta de CNPJ</h3>
+
+        <form id="formCnpj">
+          <input type="text" id="inputCnpj" placeholder="Digite o CNPJ" maxlength="18" />
+          <button type="submit" class="btn btn-azul">Buscar</button>
+        </form>
+
+        <p class="erro" id="erroCnpj"></p>
+        <div id="resultCnpj"></div>
+      </div>
+
+      <div class="api-card">
+        <h3>Consulta de CEP</h3>
+
+        <form id="formCep">
+          <input type="text" id="inputCep" placeholder="Digite o CEP" maxlength="9" />
+          <button type="submit" class="btn btn-azul">Buscar</button>
+        </form>
+
+        <p class="erro" id="erroCep"></p>
+        <div id="resultCep"></div>
+    </div>
+
+      <div class="api-card">
+        <h3>Consulta Tabela FIPE</h3>
+
+        <form id="formFipe">
+          <select id="selectTipo">
+            <option value="carros">Carros</option>
+            <option value="motos">Motos</option>
+            <option value="caminhoes">Caminhões</option>
+          </select>
+
+          <select id="selectMarca">
+            <option value="">Carregando marcas...</option>
+          </select>
+
+          <button type="submit" class="btn btn-azul">Buscar</button>
+        </form>
+
+        <p class="erro" id="erroFipe"></p>
+        <div id="resultFipe"></div>
+      </div>
+    </section>
+
+    
+    <section class="section fundo-azul" id="contato">
+      <h2 class="titulo">Contato</h2>
+      <p class="texto">Estou disponível para oportunidades e projetos. Entre em contato:</p>
+
+      <div class="botoes">
+        <a href="mailto:seuemail@exemplo.com" class="btn btn-azul">Enviar E-mail</a>
+        <a href="https://wa.me/5565993318704" target="_blank" class="btn btn-borda">WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="ano"></span> Taylon - Projeto acadêmico ADS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
